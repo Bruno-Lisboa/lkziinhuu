@@ -1,0 +1,171 @@
+/* ========================= RESET ======================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p {
+    font-family: 'Poppins', sans-serif;
+}
+h1, p {
+    color: #fff;
+}
+.lk {
+    font-weight: 600;
+}
+/* ========================= ICONE CHECKED TWITTER ======================= */
+.checked {
+    height: 1.2rem;
+    width: auto;
+}
+/* ========================= CAIXA SUPREMA ======================= */
+.section {
+    background-color: #000000;
+    background-image: url(assets/5e766701-5680-4ff4-8bdd-0dc50f1db1b3.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.quadrado {
+    height: 650px;
+    width: 500px;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* ========================= ANIMAÇÃO (FAVOR NÃO MEXER)======================= */
+.quadrado::before {
+    content: " ";
+    position: absolute;
+    height: 922px;
+    width: 220px;
+    align-self: center;
+    border-radius: 1rem;
+    background: linear-gradient(135deg, rgb(12, 230, 158) 0%, rgb(45, 141, 219) 90%);
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.quadrado2 {
+    position: absolute;
+    background: #000000;
+    inset: 2px;
+    border-radius: 1rem;
+    z-index: 1;
+    height: auto;
+    width: auto;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* ========================= BACKGROUND VIDEO ======================= */
+.bgvideo {
+    position: absolute;
+    border-radius: 1rem;
+	right: 0; 
+	bottom: 0;
+	width: 100%; 
+	height: 100%; 
+	z-index: -1000;
+	background-size: cover;
+}
+/* ========================= TEXTO DO MEIO ======================= */
+.perfil-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* ========================= PERFIL ======================= */
+.perfil {
+    display: flex;
+    justify-content: center;
+}
+.perfil video{
+    height: 11rem;
+    clip-path: circle();
+    width: auto;
+}
+/* ========================= BOTÃO ======================= */
+.links {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.button {
+    border: 1px solid #ffffff28;
+    background-color: #00000038;
+    height: 2.5rem;
+    width: 80%;
+    border-radius: 2rem;
+    margin-top: 4px;   
+    font-weight: 400;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+ion-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #fff;
+}
+.link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 20%;
+    height: 100%;
+}
+.link-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-right: 10%;
+    height: 100%;
+    color: #fff;
+}
+.button:hover {
+    background: linear-gradient(135deg, rgb(12, 230, 158) 0%, rgb(45, 141, 219) 90%);
+}
+.button:hover a,
+.button:hover ion-icon {
+    color: #000000;
+}
+/* ========================= TEXTO DO MEIO ======================= */
+.descrition {
+    height: 8rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/* ========================= RESPONSIVO ======================= */
+@media (max-width: 768px) {
+    .section{
+        background-image: none;
+    }
+}
+@media (max-width: 425px) {
+    .button {
+        width: 100%;
+    }
+}
